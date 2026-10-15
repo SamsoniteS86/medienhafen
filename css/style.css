@@ -49,3 +49,14 @@ img { max-width: 100%; }
 .unterseite h2 { font-family: 'Bricolage Grotesque', sans-serif; font-size: 24px; margin: 36px 0 8px; }
 .unterseite .hinweis { background: #FFFFFF; border-radius: 18px; padding: 20px 24px; color: #3C4F5A; }
 .unterseite .zurueck { font-weight: 700; }
+
+/* Startbereich auf dem Handy: Bild oben frei sichtbar, Text darunter auf dunklem Grund */
+@media (max-width: 899px) {
+  .hero { min-height: 0 !important; display: block !important; }
+  .hero-img { position: relative !important; display: block; height: min(62vh, 520px) !important; object-position: 42% 35% !important; }
+  .hero-tint, .hero-side { display: none !important; }
+  .hero-top { height: 140px !important; bottom: auto !important; background: linear-gradient(180deg, rgba(20, 38, 48, 0.7) 0%, rgba(20, 38, 48, 0) 100%) !important; }
+  .hero-header { position: absolute !important; top: 0; left: 0; right: 0; flex-wrap: nowrap !important; }
+  .hero-nav a:not(:last-child) { display: none !important; }
+  .hero-content { display: block !important; padding: 36px 24px 56px !important; background: #1D3644; }
+}
