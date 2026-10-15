@@ -60,3 +60,6 @@ img { max-width: 100%; }
   .hero-nav a:not(:last-child) { display: none !important; }
   .hero-content { display: block !important; padding: 36px 24px 56px !important; background: #1D3644; }
 }
+
+/* Navigation im Startbereich: Links beim Darüberfahren unterstreichen */
+.hero-nav a:hover { text-decoration: underline !important; text-underline-offset: 4px; }
