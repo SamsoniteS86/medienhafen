@@ -38,9 +38,10 @@ a { color: #1D3644; }
 a:hover { color: #B9552F; }
 img { max-width: 100%; }
 
-/* Startbild auf großen Bildschirmen etwas nach links schieben, damit Mutter und Kind gut sichtbar bleiben */
+/* Startbild: auf großen Bildschirmen das breite Panorama, die Familie steht links frei neben dem Text */
+.hero picture { display: contents; }
 @media (min-width: 900px) {
-  .hero-img { max-width: none; width: 130% !important; left: -30% !important; object-position: 50% 30% !important; }
+  .hero-img { object-position: 8% center !important; }
 }
 
 /* Unterseiten (Impressum, Datenschutz) */
@@ -53,7 +54,7 @@ img { max-width: 100%; }
 /* Startbereich auf dem Handy: Bild oben frei sichtbar, Text darunter auf dunklem Grund */
 @media (max-width: 899px) {
   .hero { min-height: 0 !important; display: block !important; }
-  .hero-img { position: relative !important; display: block; height: min(62vh, 520px) !important; object-position: 42% 35% !important; }
+  .hero-img { position: relative !important; display: block; height: min(62vh, 520px) !important; object-position: 30% 35% !important; }
   .hero-tint, .hero-side { display: none !important; }
   .hero-top { height: 140px !important; bottom: auto !important; background: linear-gradient(180deg, rgba(20, 38, 48, 0.7) 0%, rgba(20, 38, 48, 0) 100%) !important; }
   .hero-header { position: absolute !important; top: 0; left: 0; right: 0; flex-wrap: nowrap !important; }
